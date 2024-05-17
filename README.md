@@ -5,24 +5,24 @@ In light of the existing landscape, this project advocates for the adoption of L
 
 <b>How it works?</b>
 
-The LipNet architecture operates through a meticulously designed sequence of operations.
+-The LipNet architecture operates through a meticulously designed sequence of operations.
 
-It begins with a series of three stages, each involving spatiotemporal convolutions, channel-wise dropout, and spatial max-pooling.
+-It begins with a series of three stages, each involving spatiotemporal convolutions, channel-wise dropout, and spatial max-pooling.
 
-This initial stage extracts crucial information from the input, encapsulating essential features.
+-This initial stage extracts crucial information from the input, encapsulating essential features.
 
-The architecture introduces two Bidirectional Gated Recurrent Units (BI-GRUs), a pivotal element in the process.
+-The architecture introduces two Bidirectional Gated Recurrent Units (BI-GRUs), a pivotal element in the process.
 
-These Bi-GRUs facilitate the effective aggregation of outputs from the earlier spatiotemporal convolutions.
+-These Bi-GRUs facilitate the effective aggregation of outputs from the earlier spatiotemporal convolutions.
 
-Following this, each time-step undergoes a linear transformation.
+-Following this, each time-step undergoes a linear transformation.
 
-Subsequently, a softmax operation covers a vocabulary expanded to encompass the CTC blank symbol.
+-Subsequently, a softmax operation covers a vocabulary expanded to encompass the CTC blank symbol.
 
-The architecture's learning process is driven by the application of the Connectionist Temporal Classification (CTC) loss.
+-The architecture's learning process is driven by the application of the Connectionist Temporal Classification (CTC) loss.
 
-Throughout the architecture, the Rectifled Linear Unit (ReLU) serves as the activation function in all layers.
+-Throughout the architecture, the Rectifled Linear Unit (ReLU) serves as the activation function in all layers.
 
-This consistent choice of activation function contributes to the model's efficiency and performance.
+-This consistent choice of activation function contributes to the model's efficiency and performance.
 
-The orchestrated sequence of operations culminates in the LipNet architecture's proficiency in lip reading tasks.
+-The orchestrated sequence of operations culminates in the LipNet architecture's proficiency in lip reading tasks.
