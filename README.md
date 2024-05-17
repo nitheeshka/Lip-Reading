@@ -31,5 +31,25 @@ In light of the existing landscape, this project advocates for the adoption of L
 
 We employ the GRID corpus for training due to its sentence-level nature and extensive dataset. The sentences are structured using a straightforward grammar pattern: command(4) + color(4) + preposition(4) + letter(25) + digit(10)+ adverb(4). Each number indicates the available word choices within the corresponding word category. These categories encompass (bin, lay, place, set), (blue, green, red, white), (at, by, in, with), (AZ)(W), (zero, nine), and (again, now, please, soon), resulting in a pool of 64,000 potential sentences. For instance, exemplars from this dataset Include 'set blue by A four please' and 'place red at C zero again. Model training was conducted on the first 450 videos of speaker one.
 
-
+<b>Architecture</b>
+LipNet architecture. A sequence of T frames is used as input, and is processed by 3 layers of STCNN, each followed by a spatial max-pooling layer. The features extracted are processed by 2 Bi-GRUs; each time-step of the GRU output is processed by a linear layer and a softmax. This end-to-end model is trained with CTC.
 ![alt text](https://images.deepai.org/converted-papers/1611.01599/x1.png)
+
+<b>Model Perfomance metrics</b>
+-Word Error Rate = 4.8%
+-Sentence accuracy = 95.2%
+-Training Videos = 450
+-Trainable parameters = 8471924
+-Vocabulary tokens = 41
+
+
+
+
+
+
+
+
+Reference - LIPNET: END-TO-END SENTENCE-LEVEL LIPREADING
+Yannis M. Assael, Brendan Shillingford, Shimon Whiteson & Nando de Freitas
+Department of Computer Science, University of Oxford, Oxford, UK
+Google DeepMind, London, UK CIFAR, Canada
