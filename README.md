@@ -26,3 +26,10 @@ In light of the existing landscape, this project advocates for the adoption of L
 -This consistent choice of activation function contributes to the model's efficiency and performance.
 
 -The orchestrated sequence of operations culminates in the LipNet architecture's proficiency in lip reading tasks.
+
+<b>Dataset</b>
+
+We employ the GRID corpus for training due to its sentence-level nature and extensive dataset. The sentences are structured using a straightforward grammar pattern: command(4) + color(4) + preposition(4) + letter(25) + digit(10)+ adverb(4). Each number indicates the available word choices within the corresponding word category. These categories encompass (bin, lay, place, set), (blue, green, red, white), (at, by, in, with), (AZ)(W), (zero, nine), and (again, now, please, soon), resulting in a pool of 64,000 potential sentences. For instance, exemplars from this dataset Include 'set blue by A four please' and 'place red at C zero again. Model training was conducted on the first 450 videos of speaker one.
+
+
+![alt text](https://images.deepai.org/converted-papers/1611.01599/x1.png)
